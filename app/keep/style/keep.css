@@ -1,0 +1,371 @@
+/* KEEP - APP */
+
+/*Basic */
+
+h2 {
+    margin: 0;
+    margin-block-end: 10px;
+}
+
+/* KEEP ADD */
+
+.colorpickerer {
+    width: 2px;
+}
+
+.create-note {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainNoteContainer {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 1px 0px 6px 3px #ccc;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.takeNoteInput {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-inline-end: 20px;
+    border: 0px solid;
+    flex: 4
+}
+
+.specificContainer {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 3px 3px 5px 2px #ccc;
+}
+
+.specificInput {
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+/* KEEP-ICON */
+
+.noteTypeIcon {
+    cursor: pointer;
+    margin-inline-end: 5px;
+}
+
+.noteTypeIcon:hover {
+    transition: transform .5s ease-in;
+    -webkit-transition: box-shadow .3s ease-in;
+    transform: scale(1.2);
+    box-shadow: 2px 12px 25px grey;
+}
+
+.colorArticleBtn:hover {
+    transition: transform .5s ease-in;
+    -webkit-transition: box-shadow .3s ease-in;
+    transform: scale(1.2);
+    box-shadow: 2px 12px 25px grey;
+}
+
+.color-hide {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.addNoteBtn {
+    cursor: pointer;
+    width: 100%;
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-inline-start: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.pin {
+    margin: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+.todo-toggle {
+    cursor: pointer;
+}
+
+/* KEEP NOTE TODO */
+
+.todo-done {
+    color: gray;
+    text-decoration: line-through;
+}
+
+/*KEEP -LIST */
+
+.dynamicNotes-list {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto; */
+    columns: auto 4;
+    column-gap: 50px;
+    margin: 0 50px;
+    padding: 50px;
+    margin-block-start: 70px;
+}
+
+/*KEEP ARTICLE */
+
+.dynamicNotes-preview-container {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-block-end: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid;
+    border-radius: 20px;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+/* :not(:nth-child(4n+1) */
+
+.dynamicNotes-list li:hover {
+    backface-visibility: hidden;
+    -webkit-transition: box-shadow .6s ease-in;
+    transition: transform .4s ease-in;
+    transform: scale(1.05);
+    box-shadow: 2px 12px 25px grey;
+}
+
+/* CARD */
+
+.card {
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(10px);
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* CARD END */
+
+.cards-btn {
+    display: flex;
+    flex: 1;
+    width: 170px;
+    align-self: center;
+    justify-content: space-between;
+    margin-block-start: 20px;
+    margin-inline-end: 20px;
+    margin-inline-end: 20px;
+}
+
+.cards-content {
+    flex: 5;
+}
+
+.cards-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-txt {
+    word-break: break-all
+}
+
+.img-keep {
+    max-width: 100%;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #EEE
+}
+
+.colorArticleBtn {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-color: transparent;
+    padding: 0px;
+    border: 0px;
+}
+
+/* ARTICLE CARD */
+
+.article-icon {
+    margin-block-end: 20px;
+}
+
+.note-title {
+    text-shadow: hsl(60, 6%, 77%) 1px 1px 0px, #9C9C9C 2px 2px 0px;
+    margin-block-end: 20px;
+}
+
+.hr-article {
+    margin-block-start: 15px;
+}
+
+/*KEEP SEARCH BOX */
+
+.searchContainer {
+    display: flex;
+    width: 430px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.searchContainer>div {
+    padding-inline-start: 1em
+}
+
+.searchContainer>div>input {
+    width: 100%;
+    border: 0;
+}
+
+.search-input {
+    display: flex;
+    flex: 4 1 0;
+}
+
+.search-input {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.search-btn>button {
+    padding: 10px 35px 10px 35px;
+    border: none;
+    background-color: hsl(29, 92%, 62%);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* END SEARCH BOX  
+
+/*keep-filter*/
+
+.keep-filter {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 20px;
+    margin-block-start: 30px;
+}
+
+.logo {
+    margin-inline-start: 70px;
+    color: white;
+}
+
+.home-title {
+    cursor: pointer;
+}
+
+/* EFFECT FOR BUTTON AND STUFF */
+
+/*MEDIA SCREEN */
+
+@media only screen and (max-width: 1250px) {
+    .dynamicNotes-list {
+        columns: auto 3;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .dynamicNotes-list {
+        columns: auto 2;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .dynamicNotes-list {
+        columns: auto 1;
+    }
+    .mainNoteContainer {
+        width: 400px;
+    }
+    .specificContainer {
+        width: 400px;
+    }
+    .specificInput {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .searchContainer {
+        width: 330px;
+    }
+    .dynamicNotes-list {
+        row-gap: 150px;
+        margin: 0 10px;
+        padding: 10px;
+        margin-block-start: 70px;
+    }
+    .specificContainer {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        box-shadow: 3px 3px 5px 2px #ccc;
+    }
+    .specificInput {
+        width: 200px;
+    }
+
+    .takeNoteInput{
+        width: 130px;
+    }
+    .addNoteBtn {
+        flex: 1;
+        padding: 5px 12px;
+        border-radius: 2px;
+        margin-inline-start: 3px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .mainNoteContainer {
+        width: 300px;
+    }
+}
